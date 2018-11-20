@@ -13,12 +13,12 @@ An irc bot written in bash for the lulz
 
 ### How duz I run?
 ```
-./bashbot.sh irc.serverhere.com '#channel1 #channel2'
+./bashbot.sh irc.serverhere.com/6667 '#channel1 #channel2'
 ```
 With docker
 ```
 docker build -t bashbot
-docker run -d -it bashbot irc.serverhere.com '#channel1 #channel2'
+docker run -d -it bashbot irc.serverhere.com/6667 '#channel1 #channel2'
 ```
 For hot (re)loading
 ```
@@ -26,5 +26,5 @@ docker build -t bashbot .
 docker run -d -it \
     -v $(pwd)/modules:/bashbot/modules \
     bashbot \
-    irc.serverhere.com '#channel1 #channel2'
+    irc.serverhere.com/6667 '#channel1 #channel2'
 ```

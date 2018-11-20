@@ -25,6 +25,5 @@ For hot (re)loading
 docker build -t bashbot .
 docker run -d -it \
     -v $(pwd)/modules:/bashbot/modules \
-    bashbot \
-    irc.serverhere.com/6667 '#channel1 #channel2'
+    bashbot irc.serverhere.com/6667 '#channel1 #channel2'
 ```
